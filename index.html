@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    html { height: 100%; }
+
+    body {
+      min-height: 100%;
+      margin: 0;
+      background: #FD0;
+      font-family: sans-serif;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    canvas {
+      display: block;
+      margin: 0px auto 20px;
+      cursor: move;
+    }
+    .jsx-illo {
+      border: 2px solid black;
+      min-height: 200px;
+      min-width: 200px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <canvas class="illo"></canvas>
+      <canvas class="jsx-illo"></canvas>
+      <p>Click &amp; drag to rotate</p>
+    </div>
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.js"></script>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>
